@@ -1,8 +1,8 @@
 //repo of page objects-we maintain all page objects here
 
 import {test as baseTest}from "@playwright/test"
-import { LoginPage } from "../pages/loginpage";
-import { Homepage } from "../pages/homepage";
+import { LoginPage } from "../pages/Loginpage";
+import { Homepage } from "../pages/Homepage";
 import { BasePage } from "../pages/BasePage";
 import { RegistrationPage } from "../pages/RegistrationPage";
 import { SearchResultPage } from "../pages/SearchResultPage";

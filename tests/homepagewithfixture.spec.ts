@@ -6,7 +6,7 @@ test.beforeEach(async ({loginpage,homepage})=>
 {
 await loginpage.goToLoginPage();
 //await loginpage.doLogin('prakasamvidya@gmail.com','Password@123')
-await loginpage.doLogin(process.env.MYUSERNAME,process.env.MYPASSWORD)
+await loginpage.doLogin(process.env.MYUSERNAME!,process.env.MYPASSWORD!)
 })
 
 test('validate logout link',async({homepage})=>

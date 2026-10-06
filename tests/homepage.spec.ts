@@ -1,5 +1,5 @@
-import { Homepage } from "../src/pages/homepage";
-import { LoginPage } from "../src/pages/loginpage";
+import { Homepage } from "../src/pages/Homepage";
+import { LoginPage } from "../src/pages/Loginpage";
 import {test,expect} from '@playwright/test'
 
 let loginpage:LoginPage;
