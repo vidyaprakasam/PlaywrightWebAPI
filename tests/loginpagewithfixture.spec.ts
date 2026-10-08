@@ -11,7 +11,7 @@ test.beforeEach(async({loginpage})=>
         await loginpage.goToLoginPage();
   
 })
-test('loginpage title test',async({loginpage})=>
+test('@smoke loginpage title test',async({loginpage})=>
 {
    meta({priorioty:'p3',severity:'medium',owner:'vidya',story:'101',feature:'login'})
  

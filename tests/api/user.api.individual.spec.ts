@@ -27,7 +27,7 @@ async function createUser(apiHelper: any) {
 
 //Test 1: Create a user test + verify: AAA
 //POST ---> userID ---> GET /userID --> verify
-test('Create a user test', async ({ apiHelper }) => {
+test('@regression Create a user test', async ({ apiHelper }) => {
     //create a user:
     let userResponse = await createUser(apiHelper);
 
