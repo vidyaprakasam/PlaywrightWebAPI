@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3241","@regression validate logout link","chromium","2026-10-09","passed","2026-10-09","","homepagewithfixture.spec.ts","",""
+"","1162","@regression Create a user test","chromium","2026-10-09","passed","2026-10-09","","api/user.api.individual.spec.ts","",""
+"","3218","@regression validate headers","chromium","2026-10-09","passed","2026-10-09","","homepagewithfixture.spec.ts","",""
