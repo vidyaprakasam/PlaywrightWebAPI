@@ -55,12 +55,12 @@ await allure.step("go to login page",async()=>
 
 })
 
-await allure.step("login with credentials",async()=>
-{
-await loginpage.doLogin(process.env.MYUSERNAME!, process.env.MYPASSWORD!);
+// await allure.step("login with credentials",async()=>
+// {
+// await loginpage.doLogin(process.env.MYUSERNAME!, process.env.MYPASSWORD!);
 
-})
-//await loginpage.doLogin(process.env.MYUSERNAME!, process.env.MYPASSWORD!);
+// })
+await loginpage.doLogin(process.env.MYUSERNAME!, process.env.MYPASSWORD!);
 expect.soft(await homepage.islogoutlinkvisible()).toBeTruthy();
 expect.soft(await homepage.getHomePageTitle()).toBe('My Account');
 
