@@ -14,7 +14,7 @@ pipeline {
 
     tools {
         nodejs 'NodeJs-26'
-        maven 'MAVEN-3.9'
+        maven 'MAVEN 3.9'
         jdk 'JDK-21'
         allure 'Allure'
     }
