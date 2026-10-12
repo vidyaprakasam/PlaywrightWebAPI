@@ -139,14 +139,14 @@ pipeline {
                     bat 'call allure generate qa-tests\\allure-results --clean -o reports-dev\\allure || exit /b 0'
                     bat 'xcopy qa-tests\\reporting-labs reports-dev\\reportinglabs /E /I /Y /Q || exit /b 0'
                     publishHTML(target: [
-                        reportName: 'DEV Sanity - PW HTML Report',
+                        reportName: 'DEVSanityPWHTMLReport',
                         reportDir: 'reports-dev/html',
                         reportFiles: 'index.html',
                         keepAll: true,
                         alwaysLinkToLastBuild: true
                     ])
                     publishHTML(target: [
-                        reportName: 'DEV Sanity - Allure Report',
+                        reportName: 'DEVSanityAllureReport',
                         reportDir: 'reports-dev/allure',
                         reportFiles: 'index.html',
                         keepAll: true,
