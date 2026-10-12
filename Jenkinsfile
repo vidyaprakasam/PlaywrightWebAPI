@@ -136,9 +136,8 @@ pipeline {
                         if not exist reports-dev\\reportinglabs mkdir reports-dev\\reportinglabs
                     '''
                     bat 'xcopy qa-tests\\reports\\html-report reports-dev\\html /E /I /Y /Q || exit /b 0'
-  withEnv(["PATH+ALLURE=C:\\Users\\praka\\.jenkins\\tools\\org.allurereport.jenkins.tools.AllureCommandlineInstallation\\Allure\\bin"]) {
-        bat 'allure generate qa-tests\\allure-results --clean -o reports-dev\\allure || exit /b 0'
-    }                    bat 'xcopy qa-tests\\reporting-labs reports-dev\\reportinglabs /E /I /Y /Q || exit /b 0'
+                    bat 'call allure generate qa-tests\\allure-results --clean -o reports-dev\\allure || exit /b 0'
+                    bat 'xcopy qa-tests\\reporting-labs reports-dev\\reportinglabs /E /I /Y /Q || exit /b 0'
                     publishHTML(target: [
                         reportName: 'DEV Sanity - PW HTML Report',
                         reportDir: 'reports-dev/html',
